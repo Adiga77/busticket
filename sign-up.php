@@ -1,56 +1,57 @@
-<?php
-session_start();
-?>
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Sign-Up | K-Transport</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sign-in/">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
-    <link href="dashboard/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/sign-in.css" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
-  </head>
-  <body class="d-flex align-items-center py-4 bg-body-tertiary">
-
-    <main class="form-signin w-100 m-auto shadow-lg">
-      <form action="processes/signup-process.php" method="post">
-          <div class="mt-3 mb-3">
-            <?php include_once('message.php'); ?>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Sign up | K-transport</title>
+  <link rel="stylesheet" href="css/sign-up.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Title section -->
+    <div class="title">Registration</div>
+    <div class="content">
+      <!-- Registration form -->
+      <form action="#">
+        <div class="user-details">
+          <!-- Input for Full Name -->
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Enter your name" required>
           </div>
-          <div class="form-floating mb-1">
-            <input type="text" class="form-control" name="username" id="floatingInput" required>
-            <label for="floatingInput">Name</label>
+          <!-- Input for Username -->
+          <div class="input-box">
+            <span class="details">Username</span>
+            <input type="text" placeholder="Enter your username" required>
           </div>
-          <div class="form-floating mb-1">
-            <input type="tel" class="form-control" maxlength="11" name="phone" id="floatingInput" required>
-            <label for="floatingInput">Phone</label>
+          <!-- Input for Email -->
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" placeholder="Enter your email" required>
           </div>
-          <div class="form-floating mb-1">
-            <input type="email" class="form-control" name="email" id="floatingInput" required>
-            <label for="floatingInput">Email</label>
-          </div>  
-            <div class="form-floating mb-1">
-            <select name="gender" class="form-select" id="">
-                <option selected disabled></option>
-                <option>Female</option>
-                <option>Male</option>
-            </select>
-            <label for="floatingInputGrid">Gender</label>
-            </div>
-          <div class="form-floating mb-1">
-            <input type="password" class="form-control" name="password" id="floatingPassword" required>
-            <label for="floatingPassword">Password</label>
+          <!-- Input for Phone Number -->
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" placeholder="Enter your number" required>
           </div>
-
-          <button type="submit" name="submit" class="sign-in-btn w-100 py-2">Sign Up</button>
-          <div class="mt-1">
-            <p class="mt-5 mb-3 text-body-secondary">Do you have an account? <a href="sign-in.php">sign in</a></p>
+          <!-- Input for Password -->
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="text" placeholder="Enter your password" required>
           </div>
+          <!-- Input for Confirm Password -->
+          <div class="input-box">
+            <span class="details">Confirm Password</span>
+            <input type="text" placeholder="Confirm your password" required>
+          </div>
+        </div>
+        <!-- Submit button -->
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+        <a href="sign-in.php">Click to Login</a>
       </form>
-    </main>
-    <script src="dashboard/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    </div>
+  </div>
 </body>
 </html>

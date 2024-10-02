@@ -39,7 +39,7 @@
                 <a href="contact.php" class="nav-item nav-link">Contact</a>
                 <a href="bus.php" class="nav-item nav-link">Buses</a>
                 <a href="receipt.php" class="nav-item nav-link">Receipt</a>
-                <a href="http://localhost/busticket/dashboard/login.php" class="nav-item nav-link">Admin Login</a>
+                <a href="" class="nav-item nav-link">Transaction history</a>
             </div>
         </div>
     </nav>
