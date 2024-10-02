@@ -1,0 +1,13 @@
+.table-container{
+    overflow-x: auto !important;
+}
+
+.table{
+    font-size: 14px !important;
+}
+
+.login-section{
+    max-width: 900px;
+    margin: auto;
+    margin-top: 150px;
+}

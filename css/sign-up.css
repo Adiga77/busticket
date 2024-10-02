@@ -1,0 +1,33 @@
+
+.main{
+    max-width: 800px;
+    margin: auto;
+    margin-top: 70px;
+}
+
+.form-header-text{
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 10px;
+}
+
+.sign-up-btn{
+    background-color: #3cd070;
+    color: white;
+    padding: 12px;
+    border: 2px solid white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.sign-up-btn:link{
+    background-color: #3cd070;
+    color: white;
+    padding: 12px;
+}
+
+.sign-up-btn:visited{
+    background-color: #3cd070;
+    color: white;
+    padding: 12px;
+}
